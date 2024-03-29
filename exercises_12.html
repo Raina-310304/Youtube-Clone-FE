@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Flexbox Exercise</title>
+    <style>
+      .section {
+        display: flex;
+        flex-direction: row;
+        margin: 5px;
+        background-color: rgb(118, 46, 151);
+        padding: 8px;
+        font-family: Roboto;
+        justify-content: space-between;
+      }
+
+      .left {
+        font-size: 12.5px;
+        vertical-align: middle;
+        color: white;
+        font-weight:510;
+        width: 50px;
+        padding-top: 5px;
+      }
+
+      .middle {
+        flex: 1;
+        margin-left: 50px;
+        margin-right: 50px; 
+        vertical-align: middle;
+      }
+
+      .search-bar {
+        width: 500px;
+        font-size: 10.5px;
+        padding: 7px;
+        padding-left: 15px;
+        border-radius: 12px;
+        border: none;
+        vertical-align: middle;
+      }
+      .right {
+        vertical-align: middle;
+      }
+
+      .download {
+        padding: 5px;
+        vertical-align: middle;
+        padding-left: 8px;
+        padding-right: 8px;
+        background-color: rgb(118, 46, 151);
+        border-color: white;
+        border-style: solid;
+        border-width: 0.5px;
+        border-radius: 3px;
+        color: white;
+        cursor: pointer;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="section">
+      <div class="left">Home</div>
+      <div class="middle">
+        <input class="search-bar" type="text" placeholder="Search">
+      </div>
+      <div class="right">
+        <button class="download">Download</button>
+      </div>
+    </div>
+  </body>
+</html>

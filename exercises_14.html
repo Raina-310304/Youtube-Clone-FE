@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>CSS Position Exercise</title>
+    <style>
+      .left {
+        display: flex;
+        width: 70px;
+        position: fixed;
+        background-color: rgb(33, 33, 33);
+        left: 0;
+        top: 0;
+        bottom: 0;
+        align-content:space-between;
+      }
+
+      .profile-1 {
+        margin-left: 10px;
+        margin-top: 15px;
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+      }
+
+      .profile-2 {
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+        margin-top: 72px;
+        margin-left: -50px;
+      }
+
+      .profile-3 {
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+        margin-top: 128px;
+        margin-left: -50px;
+      }
+
+      .right {
+        width: 160px;
+        background-color: rgb(59, 57, 57);
+        position: fixed;
+        left: 70px;
+        top: 0;
+        bottom: 0;
+        font-family: Roboto;
+      }
+
+      .title {
+        color: white;
+        margin-top: 15px;
+        margin-left: 12px;
+        font-size: 13px;
+        font-weight: 600;
+        flex: 10;
+      }
+
+      .top {
+        display: flex;
+        align-content: center;
+      }
+      
+      .plus {
+        color: rgb(156, 156, 156);
+        margin-top: 11px;
+        margin-left: 12px;
+        font-weight: 500;
+        font-size: 20px;
+        flex: 2.8;
+        vertical-align: middle;
+      }
+
+      .content {
+        color: rgb(156, 156, 156);
+        font-family: Roboto;
+        margin-left: 13px;
+        margin-top : 10px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="right">
+        <div class="top">
+        <div class="title">
+          INFO
+        </div>
+        <div class="plus">
+          +
+        </div>
+        </div>
+        <div class="content">
+          # new-videos <br> <br>
+          # updates <br> <br>
+          # faq <br>
+        </div>
+      </div>  
+      <div class="left">
+        <img class="profile-1" src="pictures-for-exercise/oliver.png">
+        <img class="profile-2" src="pictures-for-exercise/mimi.png">
+        <img class="profile-3" src="pictures-for-exercise/rex.png">
+        </div>
+  </body>
+</html>
